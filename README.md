@@ -44,6 +44,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+closure is when functions are enclosed within other functions higher up stream and have access to the variables defined in higher functions. its like a russian nesting doll, lower functions are contained within higher functions and can adopt the variables in those higher containers, but higher functions cannot adopt the variables of the lower containers.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -65,8 +68,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+the closure is within the return function, which can use the parameters of personalDice and their associated arguments. you can tell because the curly brackets indicate a gate, or closures, so the curly brackets of return function are enclosed within the curly brackets of function personalDice.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+the return "Dan rolled a ..." would remiain the same. the number Dan rolled could change.
+
 c. What is the lexical scope of `newRoll`? 
+
+its lexical scope is contained to the return function as it is defined and contained within that lower level function scope. 
 
 ### Task 2c - Exit Ticket
 
