@@ -118,8 +118,16 @@ and returns the score at each pont in the game, like so:
 Final Score: awayTeam - homeTeam */
 
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(getInningScore, inning, repeat) {
+  let home = 0
+  let away = 0
+  for (let i = 0; i < repeat; i++){
+  home = home + inning()
+  away = away + inning()
+  console.log(`Inning ${i}: ${away} - ${home}`)
+  }
+  console.log(`Final Score: ${away} - ${home}`)
 }
-
+scoreboard(finalScore, inning, 9)
+// !!! higher order function is a function that takes another function as a parameter !!!
 
